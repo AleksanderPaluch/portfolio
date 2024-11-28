@@ -10,6 +10,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'], // Назва шрифту з Google Fonts
+      },
       typography: {
         DEFAULT: {
           css: {
@@ -24,7 +27,7 @@ export default {
     daisyui,
   ],
   daisyui: {
-    themes: ["light", "cyberpunk", "forest", "retro", "valentine", "aqua"], // List of themes to use
+    themes: ["cyberpunk", "forest",]
   },
 }
 

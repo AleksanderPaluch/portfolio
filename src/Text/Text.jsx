@@ -4,7 +4,7 @@ const Text = () => {
   return (
     <div className="prose w-9/12 ">
       <h1>title vlvkzdsasd sdvasvfsdv sfdvasdv</h1>
-      <p>
+      <p >
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem eos
         odio alias possimus debitis sapiente provident, eius quas, dolorem velit
         enim repellat magni tenetur repudiandae nemo ad eveniet fuga et?

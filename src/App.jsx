@@ -1,13 +1,23 @@
 import "./App.css";
-
-import Text from "./Text/Text";
+import Hero from "./Hero/Hero";
 import ThemeBtn from "./ThemeBtn/ThemeBtn";
 function App() {
   return (
     <>
-      <div className="flex h-screen w-full justify-center">
+      <div className="grid grid-cols-[54px_1fr]">
         <ThemeBtn />
-        <Text />
+        {/* <SideBar /> */}
+        <p>sidebar</p>
+        <main>
+          {/* <Header /> */}
+          <div className="mx-auto max-w-5xl space-y-32 px-4 pb-24 md:px-8">
+            <Hero />
+          {/* <About />
+          <Projects />
+          <Experience />
+          <Contact /> */}
+          </div>
+        </main>
       </div>
     </>
   );
