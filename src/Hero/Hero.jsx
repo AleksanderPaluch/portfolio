@@ -5,13 +5,13 @@ const Hero = () => {
     <section className="text-slat-100 overflow-hidden py-24 md:py-32">
       <Reveal>
         <h1 className="text-4xl sm:text-6xl md:text-8xl">
-          Hi, I'm Alex<span className="text-green-500">.</span>
+          Hi, I'm Alex<span className="text-primary">.</span>
         </h1>
       </Reveal>
       <Reveal>
         <h2 className="my-2 text-xl sm:text-2xl md:my-4 md:text-4xl">
           I'm a{" "}
-          <span className="font-semibold text-green-500">
+          <span className="font-semibold text-primary">
             Full Stack Developer
           </span>
         </h2>
@@ -29,7 +29,7 @@ const Hero = () => {
           onClick={() => {
             document.getElementById("contact")?.scrollIntoView();
           }}
-          className="btn btn-outline btn-primary  btn-xs sm:btn-sm md:btn-md my-2 text-xl sm:text-xl md:my-4 "
+          className="btn btn-outline btn-primary btn-xs my-2 text-xl sm:btn-sm md:btn-md sm:text-xl md:my-4"
         >
           Contact Me
         </button>
