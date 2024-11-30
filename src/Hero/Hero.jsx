@@ -5,20 +5,20 @@ const Hero = () => {
     <section className="text-slat-100 overflow-hidden py-24 md:py-32">
       <Reveal>
         <h1 className="text-4xl font-semibold sm:text-6xl md:text-8xl">
-          Hi, I'm Alex<span className="text-primary">.</span>
+          Hi, I&apos;m Alex<span className="text-primary">.</span>
         </h1>
       </Reveal>
       <Reveal>
         <h2 className="my-2 text-xl sm:text-2xl md:my-4 md:text-4xl">
-          I'm a{" "}
+          I&apos;m a{" "}
           <span className="font-bold text-primary">Full Stack Developer</span>
         </h2>
       </Reveal>
       <Reveal>
         <p className="font-italy max-w-xl text-sm leading-relaxed md:text-base md:leading-relaxed">
-          I've spent the last 1.5 years diving deep into web development,
-          building both front-end and back-end projects. I'm now on the lookout
-          to land my first developer role and bring those skills to life! Let's
+          I&apos;ve spent the last 1.5 years diving deep into web development,
+          building both front-end and back-end projects. I&apos;m now on the lookout
+          to land my first developer role and bring those skills to life! Let&apos;s
           connect!
         </p>
       </Reveal>
