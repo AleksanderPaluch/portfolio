@@ -1,8 +1,7 @@
 import Reveal from "../Reveal/Reveal";
 
 const SectionHeader = ({ title, side = "left" }) => {
-  console.log(title);
-  console.log(side);
+
   return (
     <div
       className="mb-12 flex h-20 items-center gap-8"

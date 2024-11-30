@@ -48,7 +48,7 @@ const projects = [
     ),
   },
   {
-    title: "WaterTracker.app",
+    title: "GenAI na UW",
     imgSrc: "../../public/assets/aquatrack.png",
     code: "https://github.com/AleksanderPaluch/water-tracker-app",
     projectLink: "https://water-tracker-app.vercel.app/",
@@ -93,7 +93,7 @@ const projects = [
     ),
   },
   {
-    title: "WaterTracker.app",
+    title: "Plus+Pack",
     imgSrc: "../../public/assets/aquatrack.png",
     code: "https://github.com/AleksanderPaluch/water-tracker-app",
     projectLink: "https://water-tracker-app.vercel.app/",
