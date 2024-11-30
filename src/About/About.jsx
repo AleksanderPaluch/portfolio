@@ -1,6 +1,7 @@
-import React from "react";
 import SectionHeader from "../SectionHeader/SectionHeader";
 import Reveal from "../Reveal/Reveal";
+import Links from "../Links/Links";
+import { MdOutlineArrowRightAlt } from "react-icons/md";
 
 const About = () => {
   return (
@@ -10,7 +11,7 @@ const About = () => {
         <div className="prose">
           <Reveal>
             <p>
-            <span className="bg-primary text-zinc-200 py-2 px-3 rounded font-bold mr-1 float-left text-2xl">
+              <span className="float-left mr-1 rounded bg-primary px-3 py-2 text-2xl font-bold text-zinc-200">
                 Hey!
               </span>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
@@ -42,6 +43,13 @@ const About = () => {
               facere tenetur aut amet dignissimos, tempora atque dolorum
               accusantium ipsa laudantium assumenda.
             </p>
+          </Reveal>
+          <Reveal>
+            <div className="flex items-center gap-4">
+              <p className="flex items-center gap-2 text-primary">My links <span>   <MdOutlineArrowRightAlt /></span> </p>
+           
+              <Links />
+            </div>
           </Reveal>
         </div>
         <div className="prose">
