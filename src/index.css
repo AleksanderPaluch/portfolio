@@ -10,14 +10,9 @@
   font-style: normal;
 }
 
-.no-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
 
-.writing-vertical {
-  writing-mode: vertical-lr;
-}
+
+
 
 html {
   scroll-behavior: smooth;

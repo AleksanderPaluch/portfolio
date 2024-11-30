@@ -27,7 +27,7 @@ export default {
     daisyui,
   ],
   daisyui: {
-    themes: ["cyberpunk", "forest",]
+    themes: ["cmyk", "forest",]
   },
 }
 

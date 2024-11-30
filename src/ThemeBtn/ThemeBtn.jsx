@@ -7,7 +7,7 @@ const ThemeBtn = () => {
           <input
             type="checkbox"
             className="theme-controller"
-            value="cyberpunk"
+            value="cmyk"
           />
 
           <svg

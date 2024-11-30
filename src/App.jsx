@@ -1,3 +1,4 @@
+import About from "./About/About";
 import "./App.css";
 import Hero from "./Hero/Hero";
 import ThemeBtn from "./ThemeBtn/ThemeBtn";
@@ -12,10 +13,10 @@ function App() {
           {/* <Header /> */}
           <div className="mx-auto max-w-5xl space-y-32 px-4 pb-24 md:px-8">
             <Hero />
-          {/* <About />
-          <Projects />
-          <Experience />
-          <Contact /> */}
+            <About />
+            {/* <Projects /> */}
+            {/* <Experience /> */}
+            {/* <Contact /> */}
           </div>
         </main>
       </div>

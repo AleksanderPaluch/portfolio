@@ -3,7 +3,7 @@ import { useAnimation, useInView, motion } from "framer-motion";
 
 export const Reveal = ({ children, width = "w-fit" }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false });
+  const isInView = useInView(ref, { once: true });
 
   const mainControls = useAnimation();
   const slideControls = useAnimation();
@@ -36,7 +36,7 @@ export const Reveal = ({ children, width = "w-fit" }) => {
         initial="hidden"
         animate={slideControls}
         transition={{ duration: 0.5, ease: "easeIn" }}
-        className="absolute bottom-1 left-0 right-0 top-1 z-20 bg-green-500"
+        className="absolute bottom-1 left-0 right-0 top-1 z-20 bg-primary"
       />
     </div>
   );
