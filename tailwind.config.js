@@ -11,12 +11,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        inter: ['Inter', 'sans-serif'], // Назва шрифту з Google Fonts
+        inter: ['Inter', 'sans-serif'],
       },
       typography: {
         DEFAULT: {
           css: {
-            maxWidth: '100%', // Set the max-width of prose to 100%
+            maxWidth: '100%', 
           },
         },
       },
