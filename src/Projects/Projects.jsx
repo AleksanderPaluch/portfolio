@@ -3,7 +3,7 @@ import Project from "./Project";
 
 const projects = [
   {
-    title: "WaterTracker.app",
+    title: "AquaTrack",
     imgSrc: "../../public/assets/aquatrack.png",
     code: "https://github.com/AleksanderPaluch/water-tracker-app",
     projectLink: "https://water-tracker-app.vercel.app/",
@@ -33,9 +33,9 @@ const projects = [
           experience across the app.
         </p>
         <p>
-          AquaTrack&apos;s backend is built with Node.js and Express.js, offering a
-          fast and scalable server environment for handling user requests and
-          managing hydration data.
+          AquaTrack&apos;s backend is built with Node.js and Express.js,
+          offering a fast and scalable server environment for handling user
+          requests and managing hydration data.
         </p>
         <p>
           For user authentication, AquaTrack leverages JWT and Google OAuth,
@@ -43,7 +43,6 @@ const projects = [
           for storing user profiles and hydration logs, while Heroku is used for
           seamless cloud deployment, ensuring reliable and scalable performance.
         </p>
-       
       </>
     ),
   },
@@ -55,7 +54,7 @@ const projects = [
     tech: [
       "React",
       "Redux",
-      "Node",
+
       "Express.js",
       "JWT",
       "Google OAuth",
@@ -78,15 +77,11 @@ const projects = [
           experience across the app.
         </p>
         <p>
-          AquaTrack&apos;s backend is built with Node.js and Express.js, offering a
-          fast and scalable server environment for handling user requests and
-          managing hydration data.
-        </p>
-        <p>
-          For user authentication, AquaTrack leverages JWT and Google OAuth,
-          ensuring secure login and easy access. MongoDB serves as the database
-          for storing user profiles and hydration logs, while Heroku is used for
-          seamless cloud deployment, ensuring reliable and scalable performance.
+          AquaTrack&apos;s backend, built with Node.js and Express.js, ensures a
+          fast, scalable server environment for managing hydration data. It
+          leverages JWT and Google OAuth for secure authentication, with MongoDB
+          storing user profiles and logs. Deployed on Heroku, AquaTrack delivers
+          reliable, scalable performance.
         </p>
        
       </>
@@ -123,9 +118,9 @@ const projects = [
           experience across the app.
         </p>
         <p>
-          AquaTrack&apos;s backend is built with Node.js and Express.js, offering a
-          fast and scalable server environment for handling user requests and
-          managing hydration data.
+          AquaTrack&apos;s backend is built with Node.js and Express.js,
+          offering a fast and scalable server environment for handling user
+          requests and managing hydration data.
         </p>
         <p>
           For user authentication, AquaTrack leverages JWT and Google OAuth,
@@ -133,7 +128,6 @@ const projects = [
           for storing user profiles and hydration logs, while Heroku is used for
           seamless cloud deployment, ensuring reliable and scalable performance.
         </p>
-       
       </>
     ),
   },

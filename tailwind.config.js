@@ -10,9 +10,7 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        inter: ['Inter', 'sans-serif'],
-      },
+     
       typography: {
         DEFAULT: {
           css: {
@@ -27,7 +25,7 @@ export default {
     daisyui,
   ],
   daisyui: {
-    themes: ["cmyk", "forest", "cyberpunk"]
+    themes: ["cmyk", "forest", "cyberpunk", "sunset"]
   },
 }
 

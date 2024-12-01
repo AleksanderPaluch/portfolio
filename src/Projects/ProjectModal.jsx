@@ -1,6 +1,29 @@
-import React from "react";
+import  { useEffect } from "react";
+import { FaGithub } from "react-icons/fa";
+import { ImNewTab } from "react-icons/im";
 
-const ProjectModal = ({ isOpen, setIsOpen }) => {
+const ProjectModal = ({
+  isOpen,
+  setIsOpen,
+  modalContent,
+  projectLink,
+  imgSrc,
+  title,
+  code,
+  tech,
+}) => {
+    useEffect(() => {
+        const body = document.querySelector("body");
+    
+        if (isOpen) {
+          body.style.overflowY = "hidden";
+        } else {
+          body.style.overflowY = "scroll";
+        }
+      }, [isOpen]);
+
+
+
   if (!isOpen) return <></>;
 
   return (
@@ -24,14 +47,50 @@ const ProjectModal = ({ isOpen, setIsOpen }) => {
             />
           </svg>
         </button>
-        <div className="h-[800px] w-full max-w-2xl bg-base-100 ">
-            <img src="" alt="" />
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio
-            hic excepturi repellat est labore consequatur non sed neque aliquam
-            minus cupiditate eveniet maxime voluptate, fugiat commodi architecto
-            aliquid officia voluptas.
-          </p>
+        <div
+          onClick={(e) => e.stopPropagation()}
+          className="z-100 h-fit w-full max-w-2xl cursor-auto overflow-hidden rounded-xl bg-base-100 shadow-xl"
+        >
+          <img
+            src={imgSrc}
+            alt={`An image of the ${title} project.`}
+            className="rounded-t-xl"
+          />
+          <div className="grid col-span-1 gap-4 p-4 md:p-6">
+            <h4 className="text-4xl font-bold">{title}</h4>
+            <p className="text-lg font-semibold text-primary">
+              {tech.join(" - ")}
+            </p>
+            <p className="text-md grid col-span-1  gap-2">{modalContent}</p>
+            <p className="text-2xl font-bold ">Project Links<span className="text-primary">.</span> </p>
+            <div className="flex items-center gap-6 text-lg ">
+              <a
+                 className="flex items-center gap-2 no-underline transition-colors hover:text-primary text-lg"
+                href={code}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <span>
+                  {" "}
+                  <FaGithub />
+                </span>{" "}
+                Source Code
+              </a>
+              <a
+                className="flex items-center gap-2 no-underline transition-colors hover:text-primary text-lg"
+                href={projectLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>
+                  {" "}
+                  <ImNewTab />
+                </span>{" "}
+                Live Project
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </>
