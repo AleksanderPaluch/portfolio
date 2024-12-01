@@ -5,6 +5,7 @@ import Reveal from "../Reveal/Reveal";
 import { ImNewTab } from "react-icons/im";
 import { FaGithub } from "react-icons/fa";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import ProjectModal from "./ProjectModal";
 
 const Project = ({
   modalContent,
@@ -20,8 +21,6 @@ const Project = ({
   const controls = useAnimation();
   const [isHovered, setIsHovered] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-
-  console.log(isHovered);
 
   useEffect(() => {
     if (isInView) {
@@ -84,14 +83,36 @@ const Project = ({
               </div>
             </div>
           </Reveal>
-          <p className="w-full text-xs font-semibold text-primary  text-justify">
+          <Reveal>
+          <p className="w-full text-justify text-xs font-semibold text-primary">
             {tech.join("  -  ")}
           </p>
-          <p className="text-sm cursor-pointer">
-            {description} <span className="text-primary">Learn More {">"}</span>
+          </Reveal>
+          
+          <Reveal>
+          <p className="text-sm">
+            {description}{" "}
+            <span
+              onClick={() => setIsOpen(true)}
+              className="cursor-pointer text-primary"
+            >
+              Learn More {">"}
+            </span>
           </p>
+          </Reveal>
+        
         </div>
       </motion.div>
+      <ProjectModal
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        modalContent={modalContent}
+        projectLink={projectLink}
+        imgSrc={imgSrc}
+        title={title}
+        code={code}
+        tech={tech}
+      />
     </>
   );
 };
