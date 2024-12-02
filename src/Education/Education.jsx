@@ -49,7 +49,7 @@ const Education = () => {
           <Reveal>
             <div>
               <p className="text-right md:text-2xl">Warsaw</p>
-              <p className="text-right text-xs">10/2014 - 06/2019</p>
+              <p  className="text-right text-xs md:text-lg">10/2014 - 06/2019</p>
             </div>{" "}
           </Reveal>
         </div>

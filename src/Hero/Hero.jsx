@@ -2,7 +2,7 @@ import Reveal from "../Reveal/Reveal";
 
 const Hero = () => {
   return (
-    <section className="overflow-hidden pt-36 ">
+    <section className="overflow-hidden pt-36 pb-14 md:pb-0 ">
       <Reveal>
         <h1 className="text-4xl font-semibold sm:text-6xl md:text-8xl">
           Hi, I&apos;m Alex<span className="text-primary">.</span>
@@ -15,7 +15,7 @@ const Hero = () => {
         </h2>
       </Reveal>
       <Reveal>
-        <p className="font-italy max-w-xl text-sm leading-relaxed md:text-base md:leading-relaxed">
+        <p className="font-italy max-w-xl  leading-relaxed md:text-base md:leading-relaxed">
           I&apos;ve spent the last 1.5 years diving deep into web development,
           building both front-end and back-end projects. I&apos;m now on the lookout
           to land my first developer role and bring those skills to life! Let&apos;s

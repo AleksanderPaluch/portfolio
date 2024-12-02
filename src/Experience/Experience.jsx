@@ -54,7 +54,7 @@ const expirience = [
             <span className="mr-1 rounded bg-neutral px-2 py-1 font-semibold text-zinc-100">
               Customer Relationship Management:
             </span>
-            I built and maintained strong relationships with existing and new
+            built and maintained strong relationships with existing and new
             clients
           </p>
         </Reveal>
