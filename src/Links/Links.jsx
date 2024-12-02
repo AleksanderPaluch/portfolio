@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Links = () => {
   return (
-    <div className="flex items-center text-2xl gap-4">
+    <div className="flex items-center text-xl gap-4">
       <a
       className="hover:text-primary transition-colors"
        

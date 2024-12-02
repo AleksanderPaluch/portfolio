@@ -54,9 +54,7 @@ const Technologies = () => {
           {" "}
           <div className="flex flex-wrap gap-2">
             <Chip>React Native</Chip>
-            <Chip>Type Script</Chip>
-
-         
+            <Chip>TypeScript</Chip>
             <Chip>DaisyUI</Chip>
           </div>
         </Reveal>

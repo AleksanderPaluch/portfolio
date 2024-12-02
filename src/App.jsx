@@ -1,5 +1,6 @@
 import About from "./About/About";
 import "./App.css";
+import Experience from "./Experience/Experience";
 import Hero from "./Hero/Hero";
 import Projects from "./Projects/Projects";
 import ThemeBtn from "./ThemeBtn/ThemeBtn";
@@ -16,7 +17,7 @@ function App() {
             <Hero />
             <About />
             <Projects />
-            {/* <Experience /> */}
+            <Experience />
             {/* <Contact /> */}
           </div>
         </main>

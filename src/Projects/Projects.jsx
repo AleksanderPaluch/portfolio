@@ -4,7 +4,7 @@ import Project from "./Project";
 const projects = [
   {
     title: "AquaTrack",
-    imgSrc: "../../public/assets/aquatrack.png",
+    imgSrc: "../../assets/aquatrack.png",
     code: "https://github.com/AleksanderPaluch/water-tracker-app",
     projectLink: "https://water-tracker-app.vercel.app/",
     tech: [
@@ -48,7 +48,7 @@ const projects = [
   },
   {
     title: "GenAI na UW",
-    imgSrc: "../../public/assets/aquatrack.png",
+    imgSrc: "../../assets/aquatrack.png",
     code: "https://github.com/AleksanderPaluch/water-tracker-app",
     projectLink: "https://water-tracker-app.vercel.app/",
     tech: [
@@ -89,7 +89,7 @@ const projects = [
   },
   {
     title: "Plus+Pack",
-    imgSrc: "../../public/assets/aquatrack.png",
+    imgSrc: "../../assets/aquatrack.png",
     code: "https://github.com/AleksanderPaluch/water-tracker-app",
     projectLink: "https://water-tracker-app.vercel.app/",
     tech: [
