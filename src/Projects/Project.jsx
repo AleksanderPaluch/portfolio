@@ -61,7 +61,7 @@ const Project = ({
         <div className="mt-4 flex flex-col gap-2">
           <Reveal width="w-full">
             <div className="flex items-center gap-2">
-              <h4 className="min-w-fit font-bold">{title}</h4>
+              <h4 className="min-w-fit text-2xl font-bold">{title}</h4>
               <div className="h-[1px] w-full bg-neutral"></div>
               <div className="flex items-center gap-2 text-lg">
                 <a
@@ -84,8 +84,8 @@ const Project = ({
             </div>
           </Reveal>
           <Reveal>
-          <p className="w-full text-justify text-xs font-semibold text-primary">
-            {tech.join("  -  ")}
+          <p className="w-full text-justify text-md font-semibold text-primary">
+            {tech.join(" - ")}
           </p>
           </Reveal>
           
@@ -94,7 +94,7 @@ const Project = ({
             {description}{" "}
             <span
               onClick={() => setIsOpen(true)}
-              className="cursor-pointer text-primary"
+              className="cursor-pointer text-primary font-semibold"
             >
               Learn More {">"}
             </span>

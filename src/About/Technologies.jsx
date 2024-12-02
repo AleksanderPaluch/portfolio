@@ -4,7 +4,7 @@ import Reveal from "../Reveal/Reveal";
 
 const Chip = ({ children }) => {
   return (
-    <span className="rounded bg-neutral px-4 py-1 text-sm font-semibold text-zinc-100">
+    <span className="rounded bg-neutral px-4 py-1 text-sm font-semibold text-white">
       {children}
     </span>
   );
@@ -16,7 +16,7 @@ const Technologies = () => {
       <div>
         <Reveal>
           <p className="flex items-center gap-2 text-xl font-bold ">
-            <span className="rounded bg-primary px-1 py-1 text-2xl text-zinc-100">
+            <span className="rounded bg-primary px-1 py-1 text-2xl text-white">
               <FaCode />
             </span>{" "}
             Use in projects

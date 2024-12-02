@@ -30,7 +30,7 @@ const About = () => {
           </Reveal>
           <Reveal>
             <p>
-              <blockquote>
+              <blockquote className="text-2xl">
                 &quot;How you do anything is how you do everything&quot;
               </blockquote>{" "}
               I&apos;ve already become the best in one discipline, working at

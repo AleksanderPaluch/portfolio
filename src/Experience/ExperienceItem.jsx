@@ -3,7 +3,7 @@ import Reveal from "../Reveal/Reveal";
 const ExperienceItem = ({ company, location, position, time, description }) => {
   return (
     <div>
-      <div className="row flex justify-between">
+      <div className="row flex justify-between items-center">
         <div>
           <Reveal>
             <p className="text-3xl font-bold">{company}</p>
@@ -15,7 +15,7 @@ const ExperienceItem = ({ company, location, position, time, description }) => {
 
         <Reveal>
           <div className="my-2">
-            <p className="mb-2 text-right text-2xl">{location}</p>
+            <p className=" text-right text-2xl">{location}</p>
             <p>{time}</p>
           </div>
         </Reveal>

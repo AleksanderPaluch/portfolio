@@ -1,5 +1,6 @@
 import About from "./About/About";
 import "./App.css";
+import Education from "./Education/Education";
 import Experience from "./Experience/Experience";
 import Hero from "./Hero/Hero";
 import Projects from "./Projects/Projects";
@@ -16,8 +17,10 @@ function App() {
           <div className="mx-auto max-w-5xl space-y-32 px-4 pb-24 md:px-8">
             <Hero />
             <About />
+            <Education />
             <Projects />
             <Experience />
+    
             {/* <Contact /> */}
           </div>
         </main>
