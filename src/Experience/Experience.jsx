@@ -1,25 +1,97 @@
+import { div } from "framer-motion/client";
 import SectionHeader from "../SectionHeader/SectionHeader";
+import ExperienceItem from "./ExperienceItem";
+
+const expirience = [
+  {
+    company: "Nobu",
+    location: "Warsaw",
+    position: "Sushi Chef",
+    time: "02/2022 - now",
+  },
+  {
+    company: "KPS Food",
+    location: "Warsaw",
+    position: "Regional Sales Manager",
+    time: "02/2022 - 10/2022",
+    description: (
+      <>
+        <p className="my-2">
+          <span className="mr-1 rounded bg-neutral px-2 py-1 font-semibold text-zinc-100">
+            Maximized Profit Margins:
+          </span>
+          Achieved the highest profit margin in the region for four consecutive
+          months
+        </p>
+        <p className="my-2">
+          <span className="mr-1 rounded bg-neutral px-2 py-1 font-semibold text-zinc-100">
+            Expanded Client Base:
+          </span>
+          Successfully gained 45 new clients within 7 months, contributing to
+          significant regional growth
+        </p>
+        <p className="my-2">
+          <span className="mr-1 rounded bg-neutral px-2 py-1 font-semibold text-zinc-100">
+            Market Analysis
+          </span>
+          Conducted thorough market research and competitor analysis to identify
+          new business opportunities
+        </p>
+        <p className="my-2">
+          <span className="mr-1 rounded bg-neutral px-2 py-1 font-semibold text-zinc-100">
+            Customer Relationship Management:
+          </span>
+          I built and maintained strong relationships with existing and new
+          clients
+        </p>
+      </>
+    ),
+  },
+  {
+    company: "Bogmar-Traper",
+    location: "Warsaw",
+    position: "Sales Representative",
+    time: "07/2021 - 02/2022",
+    description: (
+      <>
+        <p className="my-2">
+          {" "}
+          <span className="mr-1 rounded bg-neutral px-2 py-1  font-semibold text-zinc-100">
+            Customer Acquisition:
+          </span>
+          Identified and approached potential clients to expand the customer
+          base
+        </p>
+        <p className="my-2">
+          {" "}
+          <span className="mr-1 rounded bg-neutral px-2 py-1 font-semibold text-zinc-100">
+            {" "}
+            Sales Negotiation:
+          </span>
+          Conducted negotiations with clients to secure orders, ensure favorable
+          terms, and close deals
+        </p>
+        <p className="my-2">
+          <span className="mr-1 rounded bg-neutral px-2 py-1 font-semibold text-zinc-100">
+            {" "}
+            Customer Support:
+          </span>
+          Provided support to clients, addressing any issues or concerns
+          and ensuring high levels of customer satisfaction
+        </p>
+      </>
+    ),
+  },
+];
 
 const Experience = () => {
   return (
     <section id="expirience" className="section-wrapper">
       <SectionHeader title="Experience" side="left" />
-      <div className="prose">
-        <p>
-          While I don&apos;t have formal, commercial experience in front-end
-          development yet, I bring a decade of diverse professional experience
-          across multiple fields. From excelling in task-oriented roles, earning
-          recognition as a top-performing chef, and taking on responsibilities
-          as a regional sales manager, I&apos;ve honed essential skills like
-          problem-solving, adaptability, and perseverance.
-        </p>
-        <p>
-          Now, at 27, I&apos;m shifting my focus to follow my passion for front-end
-          development. I&apos;m not just seeking a job—I&apos;m seeking a learning
-          opportunity. I&apos;m driven to grow, to contribute, and to build a strong
-          foundation in the tech industry, prioritizing personal and
-          professional development over immediate financial rewards.
-        </p>
+      <div className="relative grid grid-cols-1 gap-8">
+        {expirience.map((item) => {
+          return <ExperienceItem key={item.company} {...item} />;
+        })}
       </div>
     </section>
   );
