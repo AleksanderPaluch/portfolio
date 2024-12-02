@@ -11,41 +11,45 @@ const Education = () => {
           <div>
             <Reveal>
               {" "}
-              <h4 className="text-3xl font-bold">FULLSTACK Developer</h4>
+              <h4 className="text-xl font-bold md:text-3xl">
+                FULLSTACK Developer
+              </h4>
             </Reveal>
             <Reveal>
               {" "}
-              <p className="text-2xl font-semibold text-primary">GoIT</p>
+              <p className="text-md font-semibold text-primary md:text-2xl">
+                GoIT
+              </p>
             </Reveal>
           </div>
           <Reveal>
-            <div >
-              <p className="text-right text-2xl">Warsaw</p>
-              <p>10/2014 - 06/2019</p>
+            <div>
+              <p className="text-right md:text-2xl">Warsaw</p>
+              <p className="text-right text-xs">10/2014 - 06/2019</p>
             </div>{" "}
           </Reveal>
         </div>
 
         <div className="flex items-center justify-between">
           {" "}
-          <div>
+          <div className="w-[240px] md:w-fit">
             <Reveal>
               {" "}
-              <h4 className="text-3xl font-bold">
+              <h4 className="text-xl font-bold md:text-3xl">
                 Master&apos;s Degree in Management
               </h4>
             </Reveal>
             <Reveal>
               {" "}
-              <p className="text-2xl font-semibold text-primary">
+              <p className="text-md font-semibold text-primary md:text-2xl">
                 Społeczna Akademia Nauk
               </p>
             </Reveal>
           </div>
           <Reveal>
-            <div >
-              <p className=" text-right text-2xl">Warsaw</p>
-              <p >10/2014 - 06/2019</p>
+            <div>
+              <p className="text-right md:text-2xl">Warsaw</p>
+              <p className="text-right text-xs">10/2014 - 06/2019</p>
             </div>{" "}
           </Reveal>
         </div>
