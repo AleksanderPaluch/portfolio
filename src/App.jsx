@@ -1,5 +1,6 @@
 import About from "./About/About";
 import "./App.css";
+import Contact from "./Contact/Contact";
 import Education from "./Education/Education";
 import Experience from "./Experience/Experience";
 import Hero from "./Hero/Hero";
@@ -21,7 +22,7 @@ function App() {
             <Projects />
             <Experience />
     
-            {/* <Contact /> */}
+            <Contact />
           </div>
         </main>
       </div>

@@ -4,7 +4,7 @@ import SectionHeader from "../SectionHeader/SectionHeader";
 
 const Education = () => {
   return (
-    <section id="education" className="section-wrapper">
+    <section id="education" >
       <SectionHeader title="Education" side="right" />
       <div className="grid grid-cols-1 gap-8">
         <div className="row flex items-center justify-between">
