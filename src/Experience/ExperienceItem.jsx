@@ -34,7 +34,8 @@ const ExperienceItem = ({
         <p>{text}</p>
       </Reveal>
 
-      <div className="my-4 flex gap-4">{description}</div>
+      <div className="my-4 md:flex gap-4">{description}</div>
+      <div className="h-[1px] w-full bg-neutral"></div>
     </div>
   );
 };

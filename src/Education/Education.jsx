@@ -12,21 +12,21 @@ const Education = () => {
           <div>
             <Reveal>
               {" "}
-              <h4 className="flex gap-4 items-center text-xl font-bold md:text-3xl">
-                FULLSTACK Developer <span className="text-lg pt-2"> <a
-                  className="transition-colors hover:text-primary"
+              <h4 className=" text-xl font-bold md:text-3xl">
+                FULLSTACK Developer 
+              </h4>
+            </Reveal>
+            <Reveal>
+              {" "}
+              <p className="flex gap-2 md:gap-4 items-center text-md font-semibold text-primary md:text-2xl">
+                GoIT  <span className="text-sm md:text-2xl"> <a
+                  className="transition-colors hover:text-base"
                   href={"https://www.linkedin.com/in/aleksander-paluch-37145631a/overlay/1726432058018/single-media-viewer/?profileId=ACoAAFDeT4UBqdyYk67ZKSiZLv_4Yr1ZFh7ZC08"}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <ImNewTab />
                 </a></span>
-              </h4>
-            </Reveal>
-            <Reveal>
-              {" "}
-              <p className=" text-md font-semibold text-primary md:text-2xl">
-                GoIT 
               </p>
             </Reveal>
           </div>
