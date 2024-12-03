@@ -2,7 +2,7 @@ import Reveal from "../Reveal/Reveal";
 
 const Hero = () => {
   return (
-    <section id="hero" className="overflow-hidden  pt-40 pb-36 md:pt-20 md:pb-0 lg:pt-36 min-h-[400px]">
+    <section id="hero" className="overflow-hidden  pt-44 pb-36 md:pt-20 md:pb-0 lg:pt-36 min-h-[400px]">
       <Reveal>
         <h1 className="text-4xl font-semibold sm:text-6xl md:text-8xl">
           Hi, I&apos;m Alex<span className="text-primary">.</span>

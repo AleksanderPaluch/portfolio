@@ -3,7 +3,7 @@ import Links from "../Links/Links";
 
 const Header = () => {
   return (
-    <div className="fixed top-0 z-20 flex w-[97%] items-center justify-between bg-base backdrop-blur px-4 py-2">
+    <div className="fixed top-0 z-20 flex w-[90%] md:w-[94%] lg:w-[97%] items-center justify-between bg-base backdrop-blur px-4 py-2">
       <div>
         <Links />
       </div>
