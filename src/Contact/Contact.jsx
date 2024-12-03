@@ -1,33 +1,48 @@
 import { IoMailSharp } from "react-icons/io5";
+import Reveal from "../Reveal/Reveal";
 
 const Contact = () => {
   return (
     <section id="contact" className="flex justify-center py-20">
-      <div className="card w-[95%] sm:max-2-[400px] md:min-w-[530px] md:w-4/6 bg-neutral shadow-2xl lg:w-3/5">
+      <div className="sm:max-2-[400px] card w-[95%] bg-neutral shadow-2xl md:w-4/6 md:min-w-[530px] lg:w-3/5">
         <div className="card-body grid gap-8">
-          <h2 className="text-zinc-200 text-center text-5xl font-bold md:text-6xl">
-            Contact<span className="text-primary">.</span>
-          </h2>
-          <p className="text-zinc-200 text-sm  text-center md:text-xl">
-            Shoot me an email if you want to connect! You can also find me on{" "}
-            <span className="text-primary hover:underline">
-              <a
-                href="https://www.linkedin.com/in/aleksander-paluch-37145631a/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Linkedin
-              </a>
-            </span>{" "}
-            if that&apos;s more your speed.
-          </p>
-          <a className="text-zinc-200 text-md md:text-xl font-semibold flex items-center gap-2 justify-center transition-colors hover:text-primary" href="mailto:aleksanderpaluch52@gmail.com">
+          <Reveal width="w-full">
+         
+            <h4 className="text-center text-5xl font-bold text-zinc-200 md:text-6xl">
+              Contact<span className="text-primary">.</span>
+            </h4>
+          </Reveal>
+        
+
+          <Reveal width="w-full">
+            <p className="text-center text-sm text-zinc-200 md:text-xl">
+              Shoot me an email if you want to connect! You can also find me on{" "}
+              <span className="text-primary hover:underline">
+                <a
+                  href="https://www.linkedin.com/in/aleksander-paluch-37145631a/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Linkedin
+                </a>
+              </span>{" "}
+              if that&apos;s more your speed.
+            </p>
+          </Reveal>
+
+          <Reveal width="w-full">
             {" "}
-            <span className="md:pt-0.5">
-              <IoMailSharp />
-            </span>{" "}
-            aleksanderpaluch52@gmail.com
-          </a>
+            <a
+              className="text-md flex items-center justify-center gap-2 font-semibold text-zinc-200 transition-colors hover:text-primary md:text-xl"
+              href="mailto:aleksanderpaluch52@gmail.com"
+            >
+              {" "}
+              <span className="md:pt-0.5">
+                <IoMailSharp />
+              </span>{" "}
+              aleksanderpaluch52@gmail.com
+            </a>
+          </Reveal>
         </div>
       </div>
     </section>
