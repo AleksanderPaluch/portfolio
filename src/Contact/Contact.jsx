@@ -1,9 +1,10 @@
 import { IoMailSharp } from "react-icons/io5";
 import Reveal from "../Reveal/Reveal";
+import { LuChevronUp } from "react-icons/lu";
 
 const Contact = () => {
   return (
-    <section id="contact" className="flex justify-center py-20">
+    <section id="contact" className="relative flex justify-center py-20">
       <div className="sm:max-2-[400px] card w-[95%] bg-neutral shadow-2xl md:w-4/6 md:min-w-[530px] lg:w-3/5">
         <div className="card-body grid gap-8">
           <Reveal width="w-full">
@@ -44,7 +45,11 @@ const Contact = () => {
             </a>
           </Reveal>
         </div>
+       
       </div>
+      <button     onClick={() => {
+            document.getElementById("hero")?.scrollIntoView();
+          }}className="absolute -bottom-20 btn text-xl  btn-ghost md:text-2xl"><LuChevronUp /></button>
     </section>
   );
 };

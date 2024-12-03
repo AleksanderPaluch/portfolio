@@ -32,7 +32,7 @@ const ProjectModal = ({
         onClick={() => setIsOpen(false)}
         className="fixed inset-0 z-50 flex cursor-pointer justify-center overflow-y-scroll bg-zinc-950/50 px-4 py-12 backdrop-blur"
       >
-        <button className="btn-circle btn-outline btn-primary btn-sm absolute right-8 top-8">
+        <button className="right-2 top-2 btn-circle btn-outline btn-primary btn-sm absolute md:right-6 md:top-6 lg:right-20 lg:top-10">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
