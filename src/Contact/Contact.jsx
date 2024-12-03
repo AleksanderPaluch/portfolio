@@ -34,7 +34,7 @@ const Contact = () => {
           <Reveal width="w-full">
             {" "}
             <a
-              className="text-md flex items-center justify-center gap-2 font-semibold text-zinc-200 transition-colors hover:text-primary md:text-xl"
+              className="text-sm flex items-center justify-center gap-2 font-semibold text-zinc-200 transition-colors hover:text-primary md:text-xl"
               href="mailto:aleksanderpaluch52@gmail.com"
             >
               {" "}
@@ -49,7 +49,7 @@ const Contact = () => {
       </div>
       <button     onClick={() => {
             document.getElementById("hero")?.scrollIntoView();
-          }}className="left-[45%] absolute -bottom-20 btn text-xl  btn-ghost md:text-2xl"><LuChevronUp /></button>
+          }}className="left-[36%] md:left-[45%] absolute -bottom-20 btn text-xl  btn-ghost md:text-2xl"><LuChevronUp /></button>
     </section>
   );
 };

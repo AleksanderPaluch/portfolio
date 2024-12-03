@@ -22,6 +22,7 @@ function App() {
             <Projects />
             <Experience />
             <Contact />
+            <Contact />
           </div>
         </main>
       </div>
