@@ -1,15 +1,24 @@
 import Reveal from "../Reveal/Reveal";
 
-const ExperienceItem = ({ company, location, position, time, description }) => {
+const ExperienceItem = ({
+  company,
+  location,
+  position,
+  time,
+  text,
+  description,
+}) => {
   return (
     <div>
-      <div className="row flex justify-between items-center">
+      <div className="row flex items-center justify-between">
         <div>
           <Reveal>
             <p className="text-xl font-bold md:text-3xl">{company}</p>
           </Reveal>
           <Reveal>
-            <p className="ttext-md font-semibold text-primary md:text-2xl">{position}</p>
+            <p className="ttext-md font-semibold text-primary md:text-2xl">
+              {position}
+            </p>
           </Reveal>
         </div>
 
@@ -20,8 +29,12 @@ const ExperienceItem = ({ company, location, position, time, description }) => {
           </div>
         </Reveal>
       </div>
+      <Reveal>
+        {" "}
+        <p>{text}</p>
+      </Reveal>
 
-      <p>{description}</p>
+      <div className="my-4 flex gap-4">{description}</div>
     </div>
   );
 };
