@@ -49,7 +49,7 @@ const Contact = () => {
       </div>
       <button     onClick={() => {
             document.getElementById("hero")?.scrollIntoView();
-          }}className="absolute -bottom-20 btn text-xl  btn-ghost md:text-2xl"><LuChevronUp /></button>
+          }}className="left-[45%] absolute -bottom-20 btn text-xl  btn-ghost md:text-2xl"><LuChevronUp /></button>
     </section>
   );
 };
