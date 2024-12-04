@@ -102,7 +102,7 @@ const expirience = [
 
 const Experience = () => {
   return (
-    <section id="expirience" >
+    <section id="experience" className="section-wrapper">
       <SectionHeader title="Experience" side="right" />
       <div className="relative grid grid-cols-1 gap-8">
         {expirience.map((item) => {

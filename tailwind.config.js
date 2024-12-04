@@ -10,7 +10,11 @@ export default {
   ],
   theme: {
     extend: {
-     
+      writingMode: {
+        'vertical-rl': 'vertical-rl',
+        'vertical-lr': 'vertical-lr',
+        'horizontal': 'horizontal-tb',
+      },
       typography: {
         DEFAULT: {
           css: {

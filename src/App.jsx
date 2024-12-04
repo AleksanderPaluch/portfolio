@@ -6,14 +6,15 @@ import Experience from "./Experience/Experience";
 import Header from "./Header/Header";
 import Hero from "./Hero/Hero";
 import Projects from "./Projects/Projects";
+import  SideBar  from "./SideBar/SideBar";
 
 function App() {
   return (
     <>
       <div className="grid grid-cols-[54px_1fr]">
       
-        {/* <SideBar /> */}
-        <p>sidebar</p>
+        <SideBar />
+      
         <main>
           <Header />
           <div className="mx-auto max-w-5xl space-y-32 px-4 pb-24 md:px-8">

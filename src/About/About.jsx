@@ -6,7 +6,7 @@ import Technologies from "./Technologies";
 
 const About = () => {
   return (
-    <section id="about" >
+    <section id="about" className="section-wrapper">
       <SectionHeader title="About" side="left" />
       <div className="prose prose-p:my-2 grid grid-cols-1 gap-8 md:grid-cols-[1fr_300px]">
         <div className="">
