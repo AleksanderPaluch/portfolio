@@ -1,18 +1,27 @@
+import { motion } from "framer-motion";
+
 const SideBarLink = ({ value, href, children, isSelected, setSelected }) => {
   return (
-    <a
-      style={{ rotate: "90deg" }}
-      className={`btn btn-ghost btn-sm rounded-none md:btn-md lg:text-lg 
-        ${isSelected === value 
-            ? "border-t-4 border-t-primary bg-neutral opacity-85" 
-            : "border-transparent"}`}
-      href={href}
-      onClick={() => {
-        setSelected(value);
-      }}
+    <motion.div
+      initial={{ x: -70 }}
+      animate={{ x: 0 }}
+      transition={{ duration: 0.8, delay: 0.3 }}
     >
-      {children}
-    </a>
+      <a
+        style={{ rotate: "90deg" }}
+        className={`btn btn-ghost btn-sm w-24 rounded-none text-white md:btn-md md:w-min lg:text-xl ${
+          isSelected === value
+            ? "border-t-4 border-t-primary bg-neutral"
+            : "border-transparent"
+        }`}
+        href={href}
+        onClick={() => {
+          setSelected(value);
+        }}
+      >
+        {children}
+      </a>
+    </motion.div>
   );
 };
 

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import SideBarLink from "./SideBarLink";
 import { useEffect, useState } from "react";
-import { section } from "framer-motion/client";
+
 
 const SideBar = () => {
 
@@ -11,7 +11,7 @@ const SideBar = () => {
   useEffect(() => {
     const sections = document.querySelectorAll(".section-wrapper")
 
-    const options = {trashhold: 0.7}
+    const options = {trashhold: 0.1}
 
 
     const callback = (entries) => {
@@ -32,9 +32,9 @@ const SideBar = () => {
       initial={{ x: -70 }}
       animate={{ x: 0 }}
       transition={{ duration: 0.5 }}
-      className="sticky left-0 top-0 z-20 flex h-screen flex-col items-center bg-base-300 gap-20 md:gap-[14px] lg:gap-12 pt-20 md:pt-16 lg:pt-24"
+      className="sticky left-0 top-0 z-20 flex h-screen flex-col items-center bg-base-300 gap-16 md:gap-[14px] lg:gap-12 pt-20 md:pt-16 lg:pt-24"
     >
-      <span className=" absolute top-2 left-3.5 text-2xl  font-bold md:text-4xl lg:block">
+      <span className=" absolute top-0 left-2 md:top-2 md:left-3.5 text-2xl  font-bold md:text-4xl lg:block">
         A<span className="text-primary">.</span>{" "}
       </span>
 
