@@ -11,7 +11,7 @@ import  SideBar  from "./SideBar/SideBar";
 function App() {
   return (
     <>
-      <div className="grid grid-cols-[54px_1fr]">
+      <div className="grid grid-cols-[34px_1fr] md:grid-cols-[54px_1fr]">
       
         <SideBar />
       
