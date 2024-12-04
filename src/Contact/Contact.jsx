@@ -51,7 +51,7 @@ const Contact = () => {
       </div>
       <button     onClick={() => {
             document.getElementById("hero")?.scrollIntoView();
-          }}className="left-[36%] md:left-[45%] absolute -bottom-20 btn text-xl  btn-ghost md:text-2xl"><LuChevronUp /></button>
+          }}className="left-[38%] md:left-[45%] absolute -bottom-20 btn text-xl  btn-ghost md:text-2xl"><LuChevronUp /></button>
 
       </div>
     
