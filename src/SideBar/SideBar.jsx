@@ -1,10 +1,31 @@
 import { motion } from "framer-motion";
 import SideBarLink from "./SideBarLink";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { section } from "framer-motion/client";
 
 const SideBar = () => {
 
-  const [isSelected, setIsSelected] = useState()
+  const [isSelected, setSelected] = useState("")
+  console.log('isSelected: ', isSelected);
+
+  useEffect(() => {
+    const sections = document.querySelectorAll(".section-wrapper")
+
+    const options = {trashhold: 0.7}
+
+
+    const callback = (entries) => {
+      entries.forEach((entry) => {
+        if(entry.isIntersecting) {
+          setSelected(entry.target.id)
+        } 
+      })
+    }
+
+    const observer = new IntersectionObserver (callback, options)
+
+    sections.forEach((section) => observer.observe(section))
+  })
 
   return (
     <motion.nav
@@ -17,19 +38,19 @@ const SideBar = () => {
         A<span className="text-primary">.</span>{" "}
       </span>
 
-      <SideBarLink value="about" href="#about">
+      <SideBarLink value="about" href="#about" isSelected={isSelected} setSelected={setSelected}>
         About
       </SideBarLink>
-      <SideBarLink value="education" href="#education">
+      <SideBarLink value="education" href="#education" isSelected={isSelected} setSelected={setSelected}>
         Edu.
       </SideBarLink>
-      <SideBarLink value="projects" href="#projects">
+      <SideBarLink value="projects" href="#projects" isSelected={isSelected} setSelected={setSelected}>
         Projects
       </SideBarLink>
-      <SideBarLink value="experience" href="#experience">
+      <SideBarLink value="experience" href="#experience" isSelected={isSelected} setSelected={setSelected}>
         Exp.
       </SideBarLink>
-      <SideBarLink value="contact" href="#contact">
+      <SideBarLink value="contact" href="#contact" isSelected={isSelected} setSelected={setSelected}>
         Contact
       </SideBarLink>
     </motion.nav>

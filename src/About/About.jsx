@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section id="about" className="section-wrapper">
       <SectionHeader title="About" side="left" />
-      <div className="prose prose-p:my-2 grid grid-cols-1 gap-8 md:grid-cols-[1fr_300px]">
+      <div className="prose grid grid-cols-1 gap-8 prose-p:my-2 md:grid-cols-[1fr_300px]">
         <div className="">
           <Reveal>
             <p>
@@ -24,15 +24,17 @@ const About = () => {
           <Reveal>
             <p>
               While I don&apos;t have formal, commercial experience in front-end
-              development yet, I bring a <strong className="text-xl font-bold">decade</strong> of diverse professional
-              experience across multiple fields. 
+              development yet, I bring a{" "}
+              <strong className="text-xl font-bold">decade</strong> of diverse
+              professional experience across multiple fields.
             </p>
           </Reveal>
           <Reveal>
+            <blockquote className="text-2xl">
+              &quot;How you do anything is how you do everything&quot;
+            </blockquote>{" "}
             <p>
-              <blockquote className="text-2xl">
-                &quot;How you do anything is how you do everything&quot;
-              </blockquote>{" "}
+              {" "}
               I&apos;ve already become the best in one discipline, working at
               Nobu and mastering the art of being a chef. Now, I&apos;m bringing
               that same focus and dedication to programming, aiming to become

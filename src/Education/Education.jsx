@@ -6,7 +6,7 @@ const Education = () => {
   return (
     <section id="education" className="section-wrapper" >
       <SectionHeader title="Education" side="right" />
-      <div className="grid grid-cols-1 gap-8">
+      <div className="grid grid-cols-1 gap-8 mb-44">
         <div className="row flex items-center justify-between">
           {" "}
           <div>
