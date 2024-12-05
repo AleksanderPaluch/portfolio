@@ -38,6 +38,8 @@ const Technologies = () => {
             <Chip>Heroku</Chip>
             <Chip>Figma</Chip>
             <Chip>Tailwind</Chip>
+            <Chip>Vite</Chip>
+
           </div>
         </Reveal>
       </div>

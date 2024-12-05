@@ -27,20 +27,20 @@ const projects = [
           top of your health goals.
         </p>
         <p>
-          AquaTrack&apos;s front-end is built using React, allowing for a
-          dynamic and responsive user interface. Redux is employed for efficient
+          AquaTrack&apos;s front-end is built using <strong>React</strong>, allowing for a
+          dynamic and responsive user interface. <strong>Redux</strong> is employed for efficient
           state management, ensuring smooth data flow and a consistent
           experience across the app.
         </p>
         <p>
-          AquaTrack&apos;s backend is built with Node.js and Express.js,
+          AquaTrack&apos;s backend is built with <strong>Node.js</strong> and <strong>Express.js</strong>,
           offering a fast and scalable server environment for handling user
           requests and managing hydration data.
         </p>
         <p>
-          For user authentication, AquaTrack leverages JWT and Google OAuth,
-          ensuring secure login and easy access. MongoDB serves as the database
-          for storing user profiles and hydration logs, while Heroku is used for
+          For user authentication, AquaTrack leverages <strong>JWT</strong> and <strong>Google OAuth</strong>,
+          ensuring secure login and easy access. <strong>MongoDB</strong> serves as the database
+          for storing user profiles and hydration logs, while <strong>Heroku</strong> is used for
           seamless cloud deployment, ensuring reliable and scalable performance.
         </p>
       </>
@@ -51,37 +51,24 @@ const projects = [
     imgSrc: "../../assets/GenAI.png",
     code: "https://github.com/AleksanderPaluch/delab-2",
     projectLink: "https://delab-2.vercel.app/",
-    tech: [
-      "React",
-      "Redux",
-
-      "Express.js",
-      "JWT",
-      "Google OAuth",
-      "MongoDB",
-      "Heroku",
-    ],
+    tech: ["Framer-motion", "Intersection-observer", "Lazy", "Recharts", "Tailwind"],
     description:
       "A Guide to Safe and Conscious Use of AI: Principles, Ethical Challenges, and Practical Tips for Students and Educators",
     modalContent: (
       <>
         <p>
-          AquaTrack is an easy-to-use app that helps you track your daily water
-          intake. It provides a seamless way to log your hydration and stay on
-          top of your health goals.
+          I built my GenAI guide webpage using <strong>Framer Motion</strong> to add smooth
+          animations and interactive transitions, making the design more
+          engaging. I also used the <strong>Intersection Observer</strong> to detect when
+          elements entered the screen, triggering animations and improving the
+          user experience.
         </p>
         <p>
-          AquaTrack&apos;s front-end is built using React, allowing for a
-          dynamic and responsive user interface. Redux is employed for efficient
-          state management, ensuring smooth data flow and a consistent
-          experience across the app.
-        </p>
-        <p>
-          AquaTrack&apos;s backend, built with Node.js and Express.js, ensures a
-          fast, scalable server environment for managing hydration data. It
-          leverages JWT and Google OAuth for secure authentication, with MongoDB
-          storing user profiles and logs. Deployed on Heroku, AquaTrack delivers
-          reliable, scalable performance.
+          To optimize performance, I implemented <strong>Lazy loading</strong>, ensuring images
+          and components loaded only when needed. For visualizing data, I used 
+          <strong> Recharts</strong> to create clear, responsive charts that make complex GenAI
+          concepts easier to understand. These tools helped create a fast,
+          interactive, and visually appealing site.
         </p>
        
       </>
