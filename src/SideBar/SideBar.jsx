@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 const SideBar = () => {
 
   const [isSelected, setSelected] = useState("")
-  console.log('isSelected: ', isSelected);
+ 
 
   useEffect(() => {
     const sections = document.querySelectorAll(".section-wrapper")

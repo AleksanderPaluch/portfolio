@@ -1,3 +1,4 @@
+import { useState } from "react";
 import About from "./About/About";
 import "./App.css";
 import Contact from "./Contact/Contact";
@@ -9,6 +10,11 @@ import Projects from "./Projects/Projects";
 import  SideBar  from "./SideBar/SideBar";
 
 function App() {
+
+  const [isPolish, setIsPolish] = useState(false)
+
+  console.log(isPolish);
+
   return (
     <>
       <div className="grid grid-cols-[34px_1fr] md:grid-cols-[54px_1fr]">
@@ -16,10 +22,10 @@ function App() {
         <SideBar />
       
         <main>
-          <Header />
+          <Header setIsPolish={setIsPolish} isPolish={isPolish}/>
           <div className="mx-auto max-w-5xl space-y-32 px-4 pb-24 md:px-8">
-            <Hero />
-            <About />
+            <Hero isPolish={isPolish} />
+            <About isPolish={isPolish}/>
             <Education />
             <Projects />
             <Experience />
