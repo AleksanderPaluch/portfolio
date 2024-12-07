@@ -8,7 +8,7 @@ const Header = () => {
         <Links />
       </div>
       <div className="flex items-center gap-2">
-        <button onClick={() => window.open("../../assets/Oleksandr_Palyukh_FullStack.cv.pdf")} className="btn btn-primary btn-sm  rounded-sm  text-xl text-white ">
+        <button onClick={() => window.open("../../assets/Oleksandr_Palyukh_FullStack_ENG.cv.pdf")} className="btn btn-primary btn-sm  rounded-sm  text-xl text-white ">
           <a href="">My Resume</a>
         </button>
         <ThemeBtn />
