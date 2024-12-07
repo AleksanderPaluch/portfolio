@@ -11,8 +11,8 @@ const SectionHeader = ({ title, side = "left" }) => {
 
       <h2 >
         <Reveal>
-          <p className="text-end py-2 text-3xl font-black md:text-5xl">
-            {title}
+          <p className=" text-end min-w-32 md:min-w-48 py-2 text-3xl font-black md:text-5xl">
+            O mnie 
             <span className="text-primary">.</span>
           </p>
         </Reveal>
