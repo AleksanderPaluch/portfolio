@@ -19,7 +19,7 @@ function App() {
     <>
       <div className="grid grid-cols-[34px_1fr] md:grid-cols-[54px_1fr]">
       
-        <SideBar />
+        <SideBar isPolish={isPolish} />
       
         <main>
           <Header setIsPolish={setIsPolish} isPolish={isPolish}/>
