@@ -10,7 +10,7 @@ const Chip = ({ children }) => {
   );
 };
 
-const Technologies = () => {
+const Technologies = ({isPolish}) => {
   return (
     <div className="relative">
       <div>
@@ -19,7 +19,8 @@ const Technologies = () => {
             <span className="rounded bg-primary px-1 py-1 text-2xl text-white">
               <FaCode />
             </span>{" "}
-            Use in projects
+            {isPolish ? "Używam w projektach" : "Use in projects"}
+            
           </p>
         </Reveal>
         <Reveal>
@@ -49,7 +50,8 @@ const Technologies = () => {
             <span className="rounded bg-primary px-1 py-1 text-2xl text-zinc-100">
               <TbMoodSearch />
             </span>{" "}
-            Interested in
+            {isPolish ? "Interesuję się" : "Interested in"}
+         
           </p>
         </Reveal>
         <Reveal>

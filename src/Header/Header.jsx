@@ -12,7 +12,7 @@ const Header = ({setIsPolish, isPolish}) => {
            {isPolish 
            ? <img className="w-6" src="../../assets/Flag_of_the_United_Kingdom_(3-5).svg" alt="" />
            : <img className="w-6 border-[1px] border-zinc-700" src="../../assets/Flag_of_Poland.svg" alt="" />} </button>
-        <button onClick={() => window.open("/assets/Oleksandr_Palyukh_JS_DEV.pdf")} className="btn btn-primary btn-sm  rounded-sm  text-xl text-white ">
+        <button onClick={() => window.open("/assets/Oleksandr_Palyukh_JS_DEV.pdf")} className="btn btn-primary btn-sm lg:min-w-[140px] rounded-sm  text-xl text-white ">
           <a href="">{isPolish ? "Moje CV" : "My Resume"}</a>
         </button>
         <ThemeBtn />
