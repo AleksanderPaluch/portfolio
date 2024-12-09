@@ -13,7 +13,7 @@ function App() {
 
   const [isPolish, setIsPolish] = useState(false)
 
-  console.log(isPolish);
+
 
   return (
     <>
@@ -26,10 +26,10 @@ function App() {
           <div className="mx-auto max-w-5xl space-y-32 px-4 pb-24 md:px-8">
             <Hero isPolish={isPolish} />
             <About isPolish={isPolish}/>
-            <Education />
-            <Projects />
-            <Experience />
-            <Contact />
+            <Education isPolish={isPolish} />
+            <Projects isPolish={isPolish} />
+            <Experience isPolish={isPolish} />
+            <Contact isPolish={isPolish} />
          
           </div>
         </main>

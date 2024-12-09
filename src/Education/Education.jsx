@@ -2,10 +2,10 @@ import { ImNewTab } from "react-icons/im";
 import Reveal from "../Reveal/Reveal";
 import SectionHeader from "../SectionHeader/SectionHeader";
 
-const Education = () => {
+const Education = ({isPolish}) => {
   return (
     <section id="education" className="section-wrapper" >
-      <SectionHeader title="Education" side="right" />
+      <SectionHeader title={isPolish ? "Edukacja" : "Education"}  side="right" />
       <div className="grid grid-cols-1 gap-8 mb-44">
         <div className="row flex items-center justify-between">
           {" "}
@@ -32,7 +32,7 @@ const Education = () => {
           </div>
           <Reveal>
             <div>
-              <p className="text-right md:text-2xl">Warsaw</p>
+              <p className="text-right md:text-2xl">{isPolish ? "Warszawa" : "Warsaw"} </p>
               <p className="text-right text-xs">10/2014 - 06/2019</p>
             </div>{" "}
           </Reveal>
@@ -44,7 +44,8 @@ const Education = () => {
             <Reveal>
               {" "}
               <h4 className="text-xl font-bold md:text-3xl">
-                Master&apos;s Degree in Management
+              {isPolish ? "Magister Zarządzania" : (<>   Master&apos;s Degree in Management</>)} 
+             
               </h4>
             </Reveal>
             <Reveal>
@@ -56,7 +57,7 @@ const Education = () => {
           </div>
           <Reveal>
             <div>
-              <p className="text-right md:text-2xl">Warsaw</p>
+              <p className="text-right md:text-2xl">{isPolish ? "Warszawa" : "Warsaw"} </p>
               <p  className="text-right text-xs md:text-lg">10/2014 - 06/2019</p>
             </div>{" "}
           </Reveal>
