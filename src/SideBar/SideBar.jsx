@@ -3,10 +3,10 @@ import SideBarLink from "./SideBarLink";
 import { useEffect, useState } from "react";
 
 
-const SideBar = () => {
+const SideBar = ({isPolish}) => {
 
   const [isSelected, setSelected] = useState("")
-  console.log('isSelected: ', isSelected);
+ 
 
   useEffect(() => {
     const sections = document.querySelectorAll(".section-wrapper")
@@ -32,26 +32,26 @@ const SideBar = () => {
       initial={{ x: -70 }}
       animate={{ x: 0 }}
       transition={{ duration: 0.5 }}
-      className="sticky left-0 top-0 z-20 flex h-screen flex-col items-center bg-base-300 gap-16 md:gap-[14px] lg:gap-12 pt-20 md:pt-16 lg:pt-24"
+      className="sticky left-0 top-0 z-20 flex h-screen flex-col items-center bg-base-300 gap-16 md:gap-[14px] lg:gap-14 pt-20 md:pt-16 lg:pt-24"
     >
       <span className=" absolute top-0 left-2 md:top-2 md:left-3.5 text-2xl  font-bold md:text-4xl lg:block">
         A<span className="text-primary">.</span>{" "}
       </span>
 
       <SideBarLink value="about" href="#about" isSelected={isSelected} setSelected={setSelected}>
-        About
+       {isPolish ? "O mnie" : "About"} 
       </SideBarLink>
       <SideBarLink value="education" href="#education" isSelected={isSelected} setSelected={setSelected}>
         Edu.
       </SideBarLink>
       <SideBarLink value="projects" href="#projects" isSelected={isSelected} setSelected={setSelected}>
-        Projects
+      {isPolish ? "Projekty" : "Projects"}  
       </SideBarLink>
       <SideBarLink value="experience" href="#experience" isSelected={isSelected} setSelected={setSelected}>
-        Exp.
+      {isPolish ? "Dośw." : "Exp."}  
       </SideBarLink>
       <SideBarLink value="contact" href="#contact" isSelected={isSelected} setSelected={setSelected}>
-        Contact
+      {isPolish ? "Kontakt" : "Contact"}  
       </SideBarLink>
     </motion.nav>
   );

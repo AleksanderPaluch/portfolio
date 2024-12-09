@@ -1,6 +1,7 @@
 import Reveal from "../Reveal/Reveal";
 
 const ExperienceItem = ({
+  isPolish,
   company,
   location,
   position,
@@ -24,7 +25,7 @@ const ExperienceItem = ({
 
         <Reveal>
           <div className="my-2">
-            <p className="text-right md:text-2xl">{location}</p>
+            <p className="text-right md:text-2xl">{isPolish ? "Warszawa" : "Warsaw"}</p>
             <p className="text-right text-xs md:text-lg">{time}</p>
           </div>
         </Reveal>

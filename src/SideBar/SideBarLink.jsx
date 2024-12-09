@@ -6,10 +6,11 @@ const SideBarLink = ({ value, href, children, isSelected, setSelected }) => {
       initial={{ x: -70 }}
       animate={{ x: 0 }}
       transition={{ duration: 0.8, delay: 0.3 }}
+      
     >
       <a
         style={{ rotate: "90deg" }}
-        className={`btn btn-ghost btn-sm w-24 rounded-none text-white md:btn-md md:w-min lg:text-xl ${
+        className={` btn btn-ghost btn-sm w-24 rounded-none text-white min-w-20 md:min-w-[100px] md:btn-md md:w-min lg:text-xl ${
           isSelected === value
             ? "border-t-4 border-t-primary bg-neutral"
             : "border-transparent"

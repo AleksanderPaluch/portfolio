@@ -8,6 +8,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import ProjectModal from "./ProjectModal";
 
 const Project = ({
+  isPolish,
   modalContent,
   projectLink,
   description,
@@ -84,7 +85,7 @@ const Project = ({
             </div>
           </Reveal>
           <Reveal>
-          <p className="w-full text-justify text-md font-semibold text-primary">
+          <p className="w-full text-justify text-sm font-semibold text-primary">
             {tech.join(" - ")}
           </p>
           </Reveal>
@@ -104,6 +105,7 @@ const Project = ({
         </div>
       </motion.div>
       <ProjectModal
+      isPolish={isPolish}
         isOpen={isOpen}
         setIsOpen={setIsOpen}
         modalContent={modalContent}

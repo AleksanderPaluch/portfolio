@@ -3,6 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import { ImNewTab } from "react-icons/im";
 
 const ProjectModal = ({
+  isPolish,
   isOpen,
   setIsOpen,
   modalContent,
@@ -12,6 +13,8 @@ const ProjectModal = ({
   code,
   tech,
 }) => {
+
+  
     useEffect(() => {
         const body = document.querySelector("body");
     
@@ -61,8 +64,8 @@ const ProjectModal = ({
             <p className="text-lg font-semibold text-primary">
               {tech.join(" - ")}
             </p>
-            <p className="text-md grid col-span-1  gap-2">{modalContent}</p>
-            <p className="text-2xl font-bold ">Project Links<span className="text-primary">.</span> </p>
+            <div className="text-md grid col-span-1  gap-2">{modalContent}</div>
+            <p className="text-2xl font-bold ">{isPolish ? "Linki do projektu" : "Project Links"}<span className="text-primary">.</span> </p>
             <div className="flex items-center gap-6 text-lg ">
               <a
                  className="flex items-center gap-2 no-underline transition-colors hover:text-primary text-lg"
