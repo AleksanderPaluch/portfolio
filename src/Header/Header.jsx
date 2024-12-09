@@ -17,7 +17,7 @@ const Header = ({ setIsPolish, isPolish }) => {
         </button>
 
         {/* Resume Button */}
-        <button onClick={() => window.open("../../assets/Oleksandr_Palyukh_FullStack_ENG.cv.pdf")} className="btn btn-primary btn-sm  rounded-sm  text-xl text-white ">
+        <button onClick={() => window.open("../../assets/Oleksandr_Palyukh_FullStack_ENG.cv.pdf")} className="btn btn-primary min-w-[150px] btn-sm  rounded-sm  text-xl text-white ">
           <a href="">{isPolish ? "Moje CV" : "My Resume"}</a>
         </button>
 

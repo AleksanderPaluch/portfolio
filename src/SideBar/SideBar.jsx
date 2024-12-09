@@ -32,9 +32,9 @@ const SideBar = ({isPolish}) => {
       initial={{ x: -70 }}
       animate={{ x: 0 }}
       transition={{ duration: 0.5 }}
-      className="sticky left-0 top-0 z-20 flex h-screen flex-col items-center bg-base-300 gap-16 md:gap-[14px] lg:gap-14 pt-20 md:pt-16 lg:pt-24"
+      className="sticky left-0 top-0 z-20 flex h-screen flex-col items-center bg-base-300 gap-24 md:gap-[20px] lg:gap-14 pt-20 md:pt-16 lg:pt-24"
     >
-      <span className=" absolute top-0 left-2 md:top-2 md:left-3.5 text-2xl  font-bold md:text-4xl lg:block">
+      <span className=" absolute top-2 left-2 md:top-2 md:left-3.5 text-2xl  font-bold md:text-4xl lg:block">
         A<span className="text-primary">.</span>{" "}
       </span>
 
