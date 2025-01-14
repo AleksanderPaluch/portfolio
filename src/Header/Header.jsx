@@ -33,8 +33,8 @@ const Header = ({ setIsPolish, isPolish }) => {
           onClick={() =>
             window.open(
               isPolish
-                ? "../../assets/Oleksandr_Palyukh_FullStack.cv.PL.pdf"
-                : "../../assets/Oleksandr_Palyukh_FullStack_ENG.cv.pdf",
+                ? "../../assets/Paluch_FULLSTACK_CV.pdf"
+                : "../../assets/Palyukh_FULLSTACK_CV.pdf",
               "_blank"
             )
           }
