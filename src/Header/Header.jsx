@@ -1,7 +1,7 @@
 import ThemeBtn from "../ThemeBtn/ThemeBtn";
 import Links from "../Links/Links";
 
-const Header = ({ setIsPolish, isPolish }) => {
+const Header = ({ setIsPolish, isPolish, isTheme, toggleTheme }) => {
   return (
     <div className="bg-base fixed top-0 z-20 flex w-[90%] items-center justify-between px-4 py-2 backdrop-blur md:w-[94%] lg:w-[97%]">
       <div>
@@ -44,7 +44,7 @@ const Header = ({ setIsPolish, isPolish }) => {
         </button>
 
         {/* Theme Button */}
-        <ThemeBtn />
+        <ThemeBtn isTheme={isTheme} toggleTheme={toggleTheme} />
       </div>
     </div>
   );
