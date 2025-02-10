@@ -3,29 +3,37 @@ import SideBarLink from "./SideBarLink";
 import { useEffect, useState } from "react";
 
 
+
+
+
+
 const SideBar = ({isPolish}) => {
 
   const [isSelected, setSelected] = useState("")
  
 
   useEffect(() => {
-    const sections = document.querySelectorAll(".section-wrapper")
-
-    const options = {trashhold: 0.1}
-
-
+    const sections = document.querySelectorAll(".section-wrapper");
+  
+    const options = { threshold: 0.4 };
+  
     const callback = (entries) => {
       entries.forEach((entry) => {
-        if(entry.isIntersecting) {
-          setSelected(entry.target.id)
-        } 
-      })
-    }
-
-    const observer = new IntersectionObserver (callback, options)
-
-    sections.forEach((section) => observer.observe(section))
-  })
+        if (entry.isIntersecting) {
+          setSelected(entry.target.id);
+        }
+      });
+    };
+  
+    const observer = new IntersectionObserver(callback, options);
+  
+    sections.forEach((section) => observer.observe(section));
+  
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, []);
+  
 
   return (
     <motion.nav
