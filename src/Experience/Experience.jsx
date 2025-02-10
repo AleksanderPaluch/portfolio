@@ -169,7 +169,7 @@ const expirience = [
 
 const Experience = ({ isPolish }) => {
   return (
-    <section id="experience" className="section-wrapper">
+    <section id="experience" className="section-wrapper pt-10">
       <SectionHeader
         title={isPolish ? "Doświadczenie" : "Experience"}
         side="right"

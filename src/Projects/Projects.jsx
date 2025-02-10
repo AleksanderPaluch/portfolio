@@ -194,7 +194,7 @@ const projects = [
 
 const Projects = ({ isPolish }) => {
   return (
-    <section id="projects" className="section-wrapper">
+    <section id="projects" className="section-wrapper pt-10">
       <SectionHeader title={isPolish ? "Projekty" : "Projects"} side="left" />
       <div className="relative grid grid-cols-1 gap-8 md:grid-cols-2">
         {projects.map((project) => {

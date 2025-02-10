@@ -6,7 +6,7 @@ import Technologies from "./Technologies";
 
 const About = ({ isPolish }) => {
   return (
-    <section id="about" className="section-wrapper">
+    <section id="about" className="section-wrapper pt-10">
       <SectionHeader title={isPolish ? "O mnie" : "About"} side="left" />
       <div className="prose grid grid-cols-1 gap-8 prose-p:my-2 md:grid-cols-[1fr_300px]">
         <div className="">

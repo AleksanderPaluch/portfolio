@@ -4,15 +4,15 @@ import SectionHeader from "../SectionHeader/SectionHeader";
 
 const Education = ({isPolish}) => {
   return (
-    <section id="education" className="section-wrapper" >
-      <SectionHeader title={isPolish ? "Edukacja" : "Education"}  side="right" />
+    <section id="education" className="section-wrapper pt-10" >
+      <SectionHeader  title={isPolish ? "Edukacja" : "Education"}  side="right" />
       <div className="grid grid-cols-1 gap-8 mb-44">
         <div className="row flex items-center justify-between">
           {" "}
           <div>
             <Reveal>
               {" "}
-              <h4 className=" text-xl font-bold md:text-3xl">
+              <h4  className=" text-xl font-bold md:text-3xl">
                 FULLSTACK Developer 
               </h4>
             </Reveal>
