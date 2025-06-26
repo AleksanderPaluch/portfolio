@@ -1,12 +1,12 @@
 import Reveal from "../Reveal/Reveal";
 
-const Hero = ({ isPolish }) => {
+const Hero = ({ isPolish}) => {
   return (
     <section id="hero" className="section-wrapper">
       <div className="min-h-[400px] overflow-hidden pb-36 pt-44 md:pb-0 md:pt-20 lg:pt-36">
         <Reveal>
           <h1 className="text-4xl font-semibold sm:text-6xl md:text-8xl">
-            {isPolish ? "Cześć, tu Alex" : "Hi, I'm Alex"}
+            {isPolish ? "Cześć, tu Alexis" : "Hi, I'm Alex"}
             <span className="text-primary">.</span>
           </h1>
         </Reveal>
